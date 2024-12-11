@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-form {
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    background: transparent; /* Set background to transparent */
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    background-image: url('3e02aace6a1c7d1dfad61ec16138178e.jpg'); /* Background image for login form */
+    background-size: cover;
+    background-position: center;
+}
+
+.register-form {
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    background: transparent; /* Set background to transparent */
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    background-image: url('7bc5d9f40c6b6636ddc78b8161ba9336.jpg'); /* Background image for registration form */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.login-form h1,
+.register-form h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.login-form h2,
+.register-form h2 {
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #272346;
+    text-align: center;
+}
+
+.login-form .main,
+.register-form .main {
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+
+.content {
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-img {
+    flex-basis: 50%;
+    background-image: none; /* Set background image to none if using image tag instead */
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: grid;
+    align-items: center;
+}
+
+.form-img img {
+    max-width: 100%;
+    display: none; /* Hide image tag if using background image */
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.btn,
+button,
+input {
+    border-radius: 35px;
+}
+
+.btn,
+button {
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #4e34b6;
+    border: none;
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: #3b279a;
+    cursor: pointer;
+    /* Add different hover effects here */
+}
+
+.btn:hover {
+    /* Color change on hover */
+    background: #3b279a;
+    color: #fff;
+}
+
+.btn:hover {
+    /* Border animation on hover */
+    border: 2px solid #fff;
+}
+
+.btn:hover {
+    /* Box shadow on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    /* Scale/zoom on hover */
+    transform: scale(1.05);
+}
+
+p.account a {
+    color: #4e34b6;
+}
+
+p.account a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-form form,
+.register-form form {
+    margin: 30px 0;
+}
+
+.login-form input,
+.register-form input {
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #999;
+    text-align: left;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: rgba(247, 250, 252, 0.8); /* Semi-transparent white background */
+    transition: 0.3s ease;
+}
+
+.login-form input:focus,
+.register-form input:focus {
+    background: transparent;
+    border: 1px solid #4e34b6;
+}
+
+.login-form input:hover,
+.register-form input:hover {
+    /* Box shadow on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #f0f0f0;
+}
+
+@media (max-width: 736px) {
+    .login-form .main,
+    .register-form .main {
+        flex-direction: column;
+    }
+    .login-form form,
+    .register-form form {
+        background-image: none;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .form-img {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content {
+        order: 1;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
